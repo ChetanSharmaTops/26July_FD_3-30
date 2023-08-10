@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes Selector</title>
+    <style>
+        div[class*="box"]{
+            width: 200px;
+            height: 200px;
+            margin: 10px auto;
+            border: 1px solid black;
+            color: aliceblue;
+        }
+        .box-1{
+            background-color: teal;
+        }
+        .box-2{
+            background-color: rgb(128, 19, 0);
+        }
+        .box-3{
+            background-color: rgb(53, 0, 128);
+        }
+        .box-4{
+            background-color: rgb(246, 6, 170);
+        }
+    </style>
+</head>
+<body>
+    <h1>Attributes Selector</h1>
+    <div class="box-1">Box-1</div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">Box-3</div>
+    <div class="box-4">Box-4</div>
+</body>
+</html>

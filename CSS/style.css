@@ -1,0 +1,15 @@
+/* syntax */
+/* selector{
+            property1: value1;
+            property2: value2;
+        } */
+
+.External{
+    background-color: violet;
+    color: black;
+}
+
+p{
+    background-color: blue;
+    color: aliceblue;
+}
