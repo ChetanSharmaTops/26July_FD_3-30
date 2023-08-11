@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector</title>
+    <style>
+        .parent+p{
+            background-color: teal;
+            color: khaki;
+            
+        }
+        h2+p{
+            background-color: crimson;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjacent Sibling Selector (+)</h1>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+    <h2>iske badd wala p </h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, rem!</p>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psuedu Element Selector</title>
+    <style>
+      h1::before {
+        content: "~ ";
+      }
+      h1::after {
+        content: " !";
+      }
+      p::first-letter{
+        font-size: 50px;
+        color: blue;
+      }
+      p::first-line{
+        color: teal;
+      }
+      p::selection{
+        background-color: crimson;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Psuedu Element Selector</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe amet
+      quaerat aut sint sapiente vitae tenetur nostrum autem aliquid omnis
+      officiis voluptas, quae, odit, eaque dolore. Corporis beatae officia
+      necessitatibus!
+    </p>
+  </body>
+</html>
