@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin Padding</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+       
+        .margin{
+            background-color: teal;
+            color: khaki;
+            margin: 100px; /* All four side*/
+            margin: 100px 200px; /* Top- bottom and right-left*/
+            margin: 100px 200px 300px; /* Top and right-left and Bottom*/
+            margin: 100px 200px 300px 400px; /* Top and right and Bottom and left*/
+        }
+        .padding{
+            background-color: teal;
+            color: khaki;
+            padding: 100px; /* All four side*/
+            padding: 100px 200px; /* Top- bottom and right-left*/
+            padding: 100px 200px 300px; /* Top and right-left and Bottom*/
+            padding: 100px 200px 300px 400px; /* Top and right and Bottom and left*/
+        }
+        div[class*="box"]{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            border: 10px solid teal;
+            background-color: crimson;
+            color: aliceblue;
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* Total Width => 100px - 20px*2 - 10px*2 = 40px*/
+            /* Total Height => 100px - 20px*2 - 10px*2 = 40px*/
+        }
+        .content-box{
+            box-sizing: content-box;
+            /* Total Width => 100px + 20px*2 + 10px*2 = 160px*/
+            /* Total Height => 100px + 20px*2 + 10px*2 = 160px*/
+        }
+    </style>
+  </head>
+  <body>
+    <div class="margin">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      enim, mollitia suscipit officiis nobis vitae aut ipsam magnam? Rerum omnis
+      cupiditate quo dolorem dicta aut facere ullam aperiam iure dignissimos.
+    </div>
+    <hr />
+    <div class="padding">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic
+      consequatur esse inventore repellat accusantium deserunt. Est minima fugit
+      quod, necessitatibus impedit, illum doloremque aspernatur, ex iusto
+      explicabo nihil perferendis?
+    </div>
+    <hr>
+    <div class="border-box">border-box</div>
+    <hr>
+    <div class="content-box">content-box</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
