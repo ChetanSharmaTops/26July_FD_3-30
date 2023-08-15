@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background IN CSS</title>
+    <style>
+        
+      div {
+        height: 500px;
+        margin: 10px 0px;
+        color: aliceblue;
+      }
+      .background-attachment {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .background-clip {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+        padding: 100px;
+
+      }
+      .background-origin {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+        padding: 100px;
+      }
+      .background-color {
+        border: 10px dashed red;
+        background-color: teal;
+      }
+      .background-image {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+      }
+      .background-position {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: top;
+        background-position: left;
+        background-position: 40% 30%;
+      }
+      .background-repeat {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-repeat: repeat;
+        background-repeat: space;
+        background-repeat: round;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+
+
+      }
+      .background-size {
+        border: 10px dashed red;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        /* background-size: 200px; */
+
+      }
+      .background-shorthand{
+        border: 10px dashed violet;
+        background: url(../../Images/banner.jpg)no-repeat center center/cover;
+
+        background:
+        url(../../Images/banner.jpg)top center / 300px 300px no-repeat fixed padding-box content-box red; 
+         /* image position / size repeat attachment origin clip color */
+      }
+      .background-multiple{
+        border: 10px dotted blue;
+        background-image: url(../../Images/banner.jpg), url(../../Images/banner2.avif);
+        background-size: 200px, cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: scroll, fixed;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background Property IN CSS</h1>
+
+    <li>background-attachment</li>
+    <li>background-clip</li>
+    <li>background-origin</li>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-position</li>
+    <li>background-repeat</li>
+    <li>background-size</li>
+    <li>background-shorthand</li>
+    <li>background-multiple</li>
+    <hr />
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>
